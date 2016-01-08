@@ -54,7 +54,7 @@ const std::vector<double> ribi::ToolTimePoll::Data::GetTimes() const
     assert(m_index >= 0);
     assert(m_index < static_cast<int>(times.size()));
     assert(m_stopwatch);
-    times[m_index]+=m_stopwatch->elapsed();
+    times[m_index]+=m_stopwatch->GetElapsedSecs();
   }
   return times;
 }
@@ -67,7 +67,7 @@ void ribi::ToolTimePoll::Data::SetIndex(const int index)
     assert(m_index >= 0);
     assert(m_index < static_cast<int>(m_times.size()));
     assert(m_stopwatch);
-    m_times[m_index] += m_stopwatch->elapsed();
+    m_times[m_index] += m_stopwatch->GetElapsedSecs();
   }
   m_stopwatch.reset(new Stopwatch);
   m_index = index;

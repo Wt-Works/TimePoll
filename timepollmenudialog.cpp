@@ -28,18 +28,19 @@ ribi::About ribi::ToolTimePoll::TimePollMenuDialog::GetAbout()
     "Richel Bilderbeek",
     "TimePoll",
     "time poll web application",
-    "the 1th of August 2011",
-    "2011-2015",
+    "January 8th of 2016",
+    "2011-2016",
     "http://www.richelbilderbeek.nl/ToolTimePoll.htm",
     GetVersion(),
-    GetVersionHistory());
-  a.AddLibrary("Stopwatch version: " + Stopwatch::GetVersion());
+    GetVersionHistory()
+  );
+  a.AddLibrary("Stopwatch version: " + Stopwatch().GetVersion());
   return a;
 }
 
 std::string ribi::ToolTimePoll::TimePollMenuDialog::GetVersion()
 {
-  return "5.0";
+  return "6.0";
 }
 
 std::vector<std::string> ribi::ToolTimePoll::TimePollMenuDialog::GetVersionHistory()
@@ -56,7 +57,8 @@ std::vector<std::string> ribi::ToolTimePoll::TimePollMenuDialog::GetVersionHisto
     "2011-07-27: Version 4.0: use of WtBroadcastServer",
     "2011-07-29: Version 4.1: fixed bug in WtBroadcastServer",
     "2011-08-01: Version 4.2: use of thread-safe data getting in WtBroadcastServer",
-    "2011-08-05: Version 5.0: use of WtServerPusher and WtTimedServerPusher"
+    "2011-08-05: Version 5.0: use of WtServerPusher and WtTimedServerPusher",
+    "2016-01-08: Version 6.0: moved to own GitHub",
   };
 }
 
