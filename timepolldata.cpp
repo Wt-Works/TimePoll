@@ -1,7 +1,7 @@
 #include "timepolldata.h"
+
+#include <numeric>
 #include "stopwatch.h"
-
-
 
 ribi::ToolTimePoll::Data * ribi::ToolTimePoll::Data::m_instance = 0;
 
