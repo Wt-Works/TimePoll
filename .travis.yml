@@ -58,9 +58,6 @@ before_script:
 
 script: 
   # Console
-  - qmake -qt=qt5 TimePollConsole.pro
-  - make debug
-  # Console
   - qmake -qt=qt5 TimePollWebsite.pro
   - make debug
   # cppcheck
